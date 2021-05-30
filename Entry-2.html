@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+  
+<body>
+  
+<style>
+
+#buttonDiv {
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: #fff;
+  color: #242424;
+  border: 2px solid;
+  transition:0.5s ease-in-out;
+  width: 220px;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media only screen and (min-width: 1025px) {
+button:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+}
+
+.active {
+  color: #fdf;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<img src="https://quotefancy.com/media/wallpaper/3840x2160/1711133-Abdul-Kalam-Quote-Dream-is-not-that-which-you-see-while-sleeping.jpg">
+
+<br>
+
+<div id="buttonDiv">
+<button type="button" id="btn1" class="active">Tier 1</button>
+<button id="btn2">Tier 2</button>
+<button id="btn3">Tier 3</button>
+</div>
+
+<div id="mustDiv"> 
+<h2>Must Explore</h2>
+
+<p><a href="http://feedproxy.google.com/~r/zerotomastery/blog/~3/xg7vphJMbRE/">Web Developer Monthly 💻🚀</a></p>
+<p><a href="http://feedproxy.google.com/~r/zerotomastery/blog/~3/OResBGMP0m4/">Python Monthly 💻🐍</a></p>
+<p><a href="https://www.producthunt.com/posts/leaddelta">LeadDelta — LinkedIn connections manager built for creators</a></p>
+<p><a href="https://dev.to/pragativerma18/confusing-terms-in-the-git-terminology-1578">Confusing Terms in the Git Terminology</a></p>
+<p><a href="https://dev.to/polymathsomnath/master-this-in-javascript-1bk">Master ‘this’ in JavaScript</a></p>
+
+</div>
+
+<div id="favDiv" style="display:none"> 
+<h2>Favorites</h2>
+
+<p><a href="https://old.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/">Drunk Post: Things I&#39;ve Learned as a Sr Engineer (reddit.com)</a></p>
+<p><a href="https://dev.to/ruppysuppy/beautify-your-github-profile-like-a-pro-5093">Beautify Your GitHub Profile like a Pro</a></p>
+<p><a href="https://www.producthunt.com/posts/octoprofile">OctoProfile — Create a more informative GitHub profile</a></p>
+<p><a href="https://dev.to/ali_hyderjatt/web-design-best-practices-gjf">Web Design Best Practices</a></p>
+<p><a href="https://scitechdaily.com/science-made-simple-anatomy-of-our-sun/">Science Made Simple: Anatomy of Our Sun</a></p>
+<p><a href="https://dev.to/odyslam/a-system-for-learning-in-public-with-roam-research-62h">Multiplayer Learning in Public with Roam Research</a></p>
+<p><a href="https://dev.to/ansarianish4/top-10-google-chrome-extensions-i-use-as-backend-web-developer-43jm">Top 10 Google chrome extensions I use as backend web developer</a></p>
+
+</div>
+
+<div id="otherDiv" style="display:none">
+<h2>Other Filtered Content</h2>
+	
+<p><a href="https://dev.to/stackfindover/simple-parallax-scrolling-effect-using-gsap-scrolltrigger-24bm">Simple Parallax Scrolling Effect Using GSAP ScrollTrigger</a></p>
+<p><a href="https://dev.to/tamerlang/introduction-to-design-patterns-540o">Introduction to Design Patterns</a></p>
+<p><a href="https://dev.to/study_web_dev/how-tailwind-can-help-you-code-faster-b93">How Tailwind Can Help You Code Faster</a></p>
+<p><a href="https://dev.to/saifullahusmani/complete-web-development-roadmap-122m">Complete Web Development Roadmap.</a></p>
+
+</div> 
+
+<script>
+
+$("#btn1").click(function() {
+  $("#mustDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn2").click(function() {
+  $("#favDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn3").click(function() {
+  $("#otherDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+</script>
+
+
+</body>
+</html>
