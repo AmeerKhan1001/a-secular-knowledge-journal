@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+  
+<body>
+<style>
+
+#buttonDiv {
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: #fff;
+  color: #242424;
+  border: 2px solid;
+  transition:0.5s ease-in-out;
+  width: 220px;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media only screen and (min-width: 1025px) {
+button:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+}
+
+.active {
+  color: #fdf;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<img src="https://dogtrainingobedienceschool.com/pic/2678712_full-my-time-is-limited-quotes-top-12-most-inspiring-steve-jobs-quotes-goalcast.jpg">
+
+<br>
+
+<div id="buttonDiv">
+<button type="button" id="btn1" class="active">Tier 1</button>
+<button id="btn2">Tier 2</button>
+<button id="btn3">Tier 3</button>
+</div>
+
+<div id="mustDiv"> 
+<h2>Must Explore</h2>
+
+<p><a href="https://dev.to/basecampxd/23-useful-github-repos-every-developer-should-follow-4p13">23 useful GitHub Repos every developer should follow</a></p>
+<p><a href="https://www.producthunt.com/posts/nuton-1">Nuton — Discover the largest Resource Hub for new creator economy</a></p>
+<p><a href="https://dev.to/requestmetrics/high-performance-images-2021-guide-48g8">High Performance Images: 2021 Guide</a></p>
+  
+</div>
+
+<div id="favDiv" style="display:none"> 
+<h2>Favorites</h2>
+
+<p><a href="https://dev.to/afif/i-made-100-more-css-loaders-for-your-next-project-4ioa">I made 100 more CSS loaders for your next project</a></p>
+<p><a href="http://feedproxy.google.com/~r/sciencealert-latestnews/~3/1bWlcKBTdSI/new-findings-could-explain-why-exercise-affects-us-all-differently">Exercise Affects Us All Differently. A New Study Could Finally Explain Why</a></p>
+<p><a href="https://www.producthunt.com/posts/enso-6">Ensō — Write now, think later</a></p>
+<p><a href="https://www.producthunt.com/posts/mani">mani — Imagine using sticky notes!</a></p>
+<p><a href="https://www.producthunt.com/posts/cloudbite">Cloudbite — Bite-sized cloud learning with spaced repetition</a></p>
+<p><a href="https://www.producthunt.com/posts/idea-canvas-univation">Idea Canvas | Univation — Build your idea or run a startup building program</a></p>
+<p><a href="https://dev.to/rajatetc/js-interview-checklist-part-1-basics-10k6">🎯 JS Interview Checklist - Part 1 (Basics)</a></p>
+  
+</div>
+
+<div id="otherDiv" style="display:none">
+<h2>Other Filtered Content</h2>
+	
+<p><a href="https://www.producthunt.com/posts/loopmessage">LoopMessage — Mass personalized iMessage, WhatsApp, and Telegram messaging</a></p>
+<p><a href="https://www.producthunt.com/posts/famli">Famli — Family health made fun and simple</a></p>
+<p><a href="https://www.producthunt.com/posts/happer-2">Happer — Meet people &amp; participate in activities, happier together</a></p>
+<p><a href="https://quoteinvestigator.com/2021/04/02/computer-science/">“Computer science is not about computers” (quoteinvestigator.com)</a></p>
+<p><a href="https://www.newscientist.com/article/2279115-this-is-the-most-detailed-look-at-individual-atoms-ever-captured/?utm_campaign=RSS%7CNSNS&amp;utm_source=NSNS&amp;utm_medium=RSS&amp;utm_content=home">This is the most detailed look at individual atoms ever captured</a></p>
+
+</div>
+ 
+
+<script>
+
+$("#btn1").click(function() {
+  $("#mustDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn2").click(function() {
+  $("#favDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn3").click(function() {
+  $("#otherDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+</script>
+
+</body>
+</html>
