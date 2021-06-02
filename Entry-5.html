@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<h1>Entry - 5</h1>
+
+<style>
+
+#buttonDiv {
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: #fff;
+  color: #242424;
+  border: 2px solid;
+  transition:0.5s ease-in-out;
+  width: 220px;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media only screen and (min-width: 1025px) {
+button:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+}
+
+.active {
+  color: #fdf;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<img src="https://dogtrainingobedienceschool.com/pic/2678712_full-my-time-is-limited-quotes-top-12-most-inspiring-steve-jobs-quotes-goalcast.jpg">
+
+<br>
+
+<div id="buttonDiv">
+<button type="button" id="btn1" class="active">Tier 1</button>
+<button id="btn2">Tier 2</button>
+<button id="btn3">Tier 3</button>
+</div>
+
+<div id="mustDiv"> 
+<h2>Must Explore</h2>
+
+<p><a href="https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/">JavaScript Async/Await Tutorial – Learn Callbacks, Promises, and Async/Await in JS by Making Ice Cream 🍧🍨🍦</a></p>
+<p><a href="https://scitechdaily.com/revolutionary-self-aware-materials-build-the-foundation-for-living-structures/">Revolutionary Self-Aware Materials Build the Foundation for Living Structures</a></p>
+<p><a href="https://www.producthunt.com/posts/tweeter">Tweeter — Sharing to Twitter made easy</a></p>
+  
+</div>
+
+<div id="favDiv" style="display:none"> 
+<h2>Favorites</h2>
+
+<p><a href="https://www.freecodecamp.org/news/learn-next-js/">Learn Next.js and Make React Development Simpler</a></p>
+<p><a href="https://dev.to/hieptl/learn-react-by-building-netflix-1127">Learn React By Building Netflix</a></p>
+<p><a href="https://dev.to/manuelduarte077/learn-go-in-8-minutes-59ph">Learn Go in 8 minutes</a></p>
+<p><a href="https://dev.to/rajatetc/js-interview-checklist-part-2-advanced-359h">🎯 JS Interview Checklist - Part 2 (Advanced)</a></p>
+<p><a href="https://uxdesign.cc/a-guide-to-the-modern-minimal-ui-style-531ac1e9fbfe">A guide to the Modern Minimal UI style</a></p>
+<p><a href="https://www.producthunt.com/posts/growth-skills-assessment-test">Growth Skills Assessment Test — Rate yourself across key skills for driving growth</a></p>
+  
+</div>
+
+<div id="otherDiv" style="display:none">
+<h2>Other Filtered Content</h2>
+	
+<p><a href="https://dev.to/ishtiaq156/devtools-tip-of-the-day-the-console-dollars-476j">DevTools Tip of the day: The Console dollars</a></p>
+<p><a href="https://dev.to/kunaal438/how-to-make-custom-right-click-options-pure-css-and-js-53e8">Awesome custom right click options. Pure CSS and JS</a></p>
+<p><a href="https://dev.to/line/top-10-youtube-channel-for-developers-283b">Top 10 YouTube Channel For Developers</a></p>
+<p><a href="https://www.producthunt.com/posts/ready-ui">Ready UI — 200+ Bootstrap UI blocks to create beautiful websites</a></p>
+  
+</div>
+ 
+
+<script>
+
+$("#btn1").click(function() {
+  $("#mustDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn2").click(function() {
+  $("#favDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn3").click(function() {
+  $("#otherDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+</script>
+
+</body>
+</html>
