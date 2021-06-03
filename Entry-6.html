@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<h1>Entry - 5</h1>
+
+<style>
+
+#buttonDiv {
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: #fff;
+  color: #242424;
+  border: 2px solid;
+  transition:0.5s ease-in-out;
+  width: 220px;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media only screen and (min-width: 1025px) {
+button:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+}
+
+.active {
+  color: #fdf;
+  background-color: #000;
+  border-color: #311432;
+  box-shadow: 0 0.8em 0.5em -0.4em #311432;
+  transform: translateY(-0.35em);
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<img src="https://www.brainyquote.com/photos_tr/en/f/francisofassisi/121023/francisofassisi1.jpg">
+
+<br>
+
+<div id="buttonDiv">
+<button type="button" id="btn1" class="active">Tier 1</button>
+<button id="btn2">Tier 2</button>
+<button id="btn3">Tier 3</button>
+</div>
+
+<div id="mustDiv"> 
+<h2>Must Explore</h2>
+
+<p><a href="https://dev.to/devdefinitive/33-github-projects-i-have-bookmarked-and-you-should-298o">33 Github Projects I have bookmarked and you should</a></p>
+<p><a href="https://youtu.be/L7c4wS7T_T8">A few things to know from Google I/O 2021 in under 9 minutes</a></p>
+<p><a href="https://twitter.com/alexgarcia_atx/status/1400084794986221568">Want followers fast? The Hustle’s Alex Garcia shares 9 secrets to quickly building social media and email audiences</a></p>
+  
+</div>
+
+<div id="favDiv" style="display:none"> 
+<h2>Favorites</h2>
+
+<p><a href="https://a11y-collective.com/blog/the-perfect-link/">The perfect link</a></p>
+<p><a href="https://dev.to/dragosgn/7-steps-to-become-an-expert-software-engineer-without-endless-online-courses-or-waiting-for-years-m8j">7 Steps to Become an Expert Software Engineer without endless online courses or waiting for years...</a></p>
+<p><a href="https://www.producthunt.com/posts/google-cemetery">Google Cemetery — Learn from Google&#39;s 100+ biggest failures</a></p>
+<p><a href="https://www.producthunt.com/posts/tidytag">TidyTag — Segment your LinkedIn Connections with custom tags</a></p>
+
+</div>
+
+<div id="otherDiv" style="display:none">
+<h2>Other Filtered Content</h2>
+	
+<p><a href="https://scitechdaily.com/regular-caffeine-consumption-from-coffee-cola-or-energy-drinks-affects-brain-structure/">Regular Caffeine Consumption – From Coffee, Cola, or Energy Drinks – Affects Brain Structure</a></p>
+<p><a href="https://web.dev/css-web-vitals/">CSS for Web Vitals</a></p>
+<p><a href="https://dev.to/animeshdhanuk/7-best-tips-for-web-developers-ghj">Best Tips For Web Developers</a></p>
+<p><a href="https://www.producthunt.com/posts/software-store">Software Store — General store with software for all platforms</a></p>
+<p><a href="https://dev.to/pavel_polivka/building-personal-blog-with-next-js-2d0i">Building personal blog with Next.js</a></p>
+<p><a href="https://dev.to/mike37/css-text-shadow-effects-1mmo">CSS TEXT SHADOW EFFECTS</a></p>
+<p><a href="https://dev.to/ishtiaq156/devtools-tip-of-the-day-the-console-dollars-476j">DevTools Tip of the day: The Console dollars</a></p>
+<p><a href="https://dev.to/kunaal438/how-to-make-custom-right-click-options-pure-css-and-js-53e8">Awesome custom right click options. Pure CSS and JS</a></p>
+<p><a href="https://dev.to/line/top-10-youtube-channel-for-developers-283b">Top 10 YouTube Channel For Developers</a></p>
+<p><a href="https://www.producthunt.com/posts/ready-ui">Ready UI — 200+ Bootstrap UI blocks to create beautiful websites</a></p>
+  
+</div>
+ 
+
+<script>
+
+$("#btn1").click(function() {
+  $("#mustDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn2").click(function() {
+  $("#favDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+$("#btn3").click(function() {
+  $("#otherDiv").toggle();
+  $(this).toggleClass("active");
+});
+
+</script>
+
+</body>
+</html>
