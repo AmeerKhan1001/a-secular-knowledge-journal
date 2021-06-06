@@ -1,0 +1,60 @@
+<div id="allButtonsDiv" style="margin: -0.5em">
+
+<div id="buttonTierDiv">
+<button type="button" id="btn1" class="tier active">Tier 1</button>
+<button id="btn2" class="tier">Tier 2</button>
+<button id="btn3" class="tier">Tier 3</button>
+</div>
+
+<div id="buttonCommonDiv">
+<button id="commonBtn" class="category active">🖥️ Common</button>
+</div>
+
+<div id="buttonCategoryDiv">
+<button type="button" id="toolsBtn" class="category active">🔧 Tools</button>
+<button id="techBtn" class="category active">👨‍💻 Tech</button>
+<button id="scienceBtn" class="category active">🧬 Science</button>
+</div>
+
+</div><div id="mustDiv">
+<h2>Must Explore</h2>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/educative/roadmap-to-aerospace-jobs-how-to-become-an-aerospace-programmer-g3i">Roadmap to aerospace jobs: How to become an aerospace programmer</a></p>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/eleftheriabatsou/color-psychology-in-web-design-bk2">Color psychology in web design</a></p>
+
+<p class="science">🧬  <a href="https://scitechdaily.com/antimatter-scientists-trap-elusive-material-by-blasting-it-with-lasers/">Antimatter: Scientists Trap Elusive Material by Blasting It With Lasers</a></p>
+
+
+</div>
+
+<div id="favDiv" style="display:none">
+<h2>Favorites</h2>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/coursesity/12-free-design-resources-every-developer-should-bookmark-846">12 Free Design Resources Every Developer Should Bookmark</a></p>
+
+<p class="tools">🔧  <a href="https://www.producthunt.com/posts/dreeply">Dreeply — Create customized business plans and company analyses</a></p>
+
+<p class="science">🧬  <a href="https://scitechdaily.com/new-discovery-helps-explain-how-covid-19-overpowers-the-immune-system/">New Discovery Helps Explain How COVID-19 Overpowers the Immune System</a></p>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/raviojha/javascript-making-multiple-api-calls-the-right-way-2b29">javascript: Making multiple API calls the right way</a></p>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/freakcdev297/creating-brainfuck-2d79">Creating Brainfuck</a></p>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/ayushcodes/build-a-netflix-like-custom-accordion-fe7">Build a Netflix like custom Accordion</a></p>
+
+<p class="tech">👨‍💻  <a href="https://dev.to/siddharthshyniben/series/13107">Let's build a Compiler Series' Articles</a></p>
+
+</div>
+
+<div id="otherDiv" style="display:none">
+<h2>Other Filtered Content</h2>
+
+<p class="tools">🔧  <a href="https://www.producthunt.com/posts/zenown-2-0">ZenOwn 2.0 — All your products in 1 place with tips & tricks</a></p>
+
+<p class="tools">🔧  <a href="https://www.producthunt.com/posts/don-t-waste-today">Don’t Waste Today! — Free open-source anti-procrastination app</a></p>
+
+<p class="tools">🔧  <a href="https://www.producthunt.com/posts/marketer-crew">Marketer Crew — Bite-size marketing lessons in your inbox</a></p>
+
+
+</div>
